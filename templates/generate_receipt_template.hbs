@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<style type="text/css">
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Metropolis;
+  src: url(./metropolis.medium.otf);
+}
+
+*{
+    font-family: Metropolis;
+}
+
+/* Header styling */
+header {
+  padding: 0 100px;
+}
+
+.header {
+  padding: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e7e4e4;
+}
+
+.logo > img {
+  width: 100px;
+}
+
+.name1 {
+  font-family: Metropolis;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.name2 {
+  font-family: Metropolis;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.address {
+  margin-bottom: 8px;
+}
+
+.address1 {
+  font-family: Metropolis;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-align: left;
+  margin-bottom: 3px;
+}
+
+.date {
+  font-family: Metropolis;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-align: right;
+}
+
+.pan {
+  font-family: Metropolis;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+/* Payment Info */
+.payment-info {
+  padding: 0 100px;
+}
+
+.info {
+  padding: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: center;
+}
+
+.first-logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.content-right {
+  text-align: right;
+}
+
+.first-logo > img {
+  width: 16px;
+  margin-right: 4px;
+}
+
+.first-logo > p {
+  font-family: Metropolis;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.name {
+  font-family: Metropolis;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.email {
+  font-family: Metropolis;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-align: left;
+  margin-bottom: 3px;
+}
+
+.number {
+  font-family: Metropolis;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.payment-heading {
+  font-family: Metropolis;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: -0.25px;
+  text-align: left;
+}
+
+.receipt-number {
+  font-family: Metropolis;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.info-border {
+  border: 1px solid #e7e4e4;
+  border-radius: 4px;
+}
+
+.payment-table {
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+}
+
+.first {
+  font-family: Metropolis;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0.4000000059604645px;
+  text-align: center;
+}
+
+.second {
+  font-family: Metropolis;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.tab {
+  text-align: center;
+  padding: 25px;
+  border: 1px solid #e7e4e4;
+}
+
+.info-2 {
+  margin-bottom: 5px;
+}
+
+.table-2 {
+  display: grid;
+  grid-template-columns: 75% 25%;
+  grid-template-areas: "header header";
+  margin-top: 40px;
+}
+
+.table-header {
+  grid-area: header;
+  font-family: Metropolis;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0.4000000059604645px;
+  text-align: left;
+}
+
+.tab-left {
+  text-align: left;
+  font-family: Metropolis;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.disclaimer {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.disclaimer > p {
+  font-family: Metropolis;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: 0px;
+  text-align: left;
+  margin-bottom: 8px;
+}
+
+.disclaimer > h3{
+    margin-bottom: 8px;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.footer > p{
+    margin-right: 5px;
+}
+
+.d1 {
+  font-family: Metropolis;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.4000000059604645px;
+  text-align: left;
+}
+
+.crib {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.crib > img {
+  width: 30px;
+}
+
+</style>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header> 
+        <div class="header">
+            <div class="content">
+                <p class="name1">Company</p>
+                <p class="name2">Sun Ventures Pvt Ltd</p>
+                <p class="address1">Suhaas Nagar, Delhi, 123456</p>
+                <p class="pan">PAN : 1234567890 </p>
+            </div>
+
+            <div class="logo">
+                <img src="https://d2tgh1fvbc3wmo.cloudfront.net/ic_user.png/2022/5/2/2022-05-02T14:08:38.832266-ic_user.png" alt="Logo">
+            </div>
+        </div>
+    </header>
+
+    <!-- Payment Info -->
+    <div class="payment-info"> 
+        <div class="info info-2">
+            <div class="content">
+                <h2 class="payment-heading">Payment receipt</h2>
+                <p class="receipt-number">Receipt number : 1234567890</p>
+            </div>
+
+            <div class="date">
+                <p>September 21, 2021</p>
+            </div>
+        </div>
+
+        <div class="info info-border">
+            <div class="content">
+                <p class="top">Paid By</p>
+                <h2 class="name">Naman Saini</h2>
+                <p class="email">namam.saini@gmail.com</p>
+                <p class="number">999999999</p>
+            </div>
+
+            <div class="content-right">
+                <h2 class="name">SM-Apartment-01</h2>
+                <p class="address">H-31, Shivaji Park, Delhi</p>
+
+                <div class="logos">
+                    <div class="first-logo">
+                        <!-- <img src="./event.png" alt="Logo"> -->
+                    </div>
+                    <div class="first-logo">
+                        <!-- <img src="./event (1).png" alt="Logo"> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="payment-table">
+            <div class="first tab">Charge</div>
+            <div class="first tab">Duration</div>
+            <div class="first tab">Amount due</div>
+            <div class="second tab">Rent</div>
+            <div class="second tab">Jan 01 - Jan 31</div>
+            <div class="second tab">₹15,000</div>
+        </div>
+
+        <div class="table-2">
+            <div class="table-header tab tab-left">Payment Details</div>
+            <div class="tab tab-left">Amount paid</div>
+            <div class="tab tab-left">₹15,000</div>
+            <div class="tab tab-left">Amount pending</div>
+            <div class="tab tab-left">₹0</div>
+        </div>
+
+        <div class="table-2">
+            <div class="table-header tab tab-left">Transaction Details</div>
+            <div class="tab tab-left">Transaction mode</div>
+            <div class="tab tab-left">Bank Transfer</div>
+            <div class="tab tab-left">Reference number</div>
+            <div class="tab tab-left">0987654321234</div>
+        </div>
+
+        <p class="d1">*This is a computer generated receipt and does not require signature</p>
+
+        <div class="disclaimer">
+            <h3>Note:</h3>
+            <p>1. Vestibulum consequat purus turpis tempor. In sed eget id odio maecenas sagittis. Facilisi lorem sed.</p>
+            <p>2. A etiam sagittis est lectus aliquet. Interdum cursus dui aenean ut. Volutpat odio maecenas elementum aliquam amet et vel vel. Facilisis eget nec integer sit etiam volutpat. </p>
+        </div>
+
+         <div class="footer">
+            <p>Powered by</p> 
+            <div class="crib">
+                <!-- <img src="./.png" alt="Logo"> -->
+            </div>
+        </div> 
+    </div>
+</body>
+</html>

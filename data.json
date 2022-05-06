@@ -1,0 +1,21 @@
+{
+	"id":{
+		"name":{
+			"first": "alex",
+			"last": "Rolf"
+		},
+		"color": "red",
+		"animal": "dog"
+	},
+	"shots": [
+		{
+			"type": "Heartworn",
+			"date": "2017-07-27"
+		},
+		{
+			"type": "Kennel",
+			"date": "2017-10-27"
+		}
+		
+	]
+}

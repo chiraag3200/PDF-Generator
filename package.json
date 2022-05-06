@@ -10,6 +10,9 @@
   "license": "ISC",
   "dependencies": {
     "fs-extra": "^10.1.0",
+    "handlebars": "^4.7.7",
+    "moment": "^2.29.3",
+    "path": "^0.12.7",
     "puppeteer": "^13.7.0"
   }
 }
